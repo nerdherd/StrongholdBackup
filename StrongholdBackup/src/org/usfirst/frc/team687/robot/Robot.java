@@ -8,21 +8,22 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.VictorSP;
 
 /**
- * The VM is configured to automatically run this class, and to call the
- * functions corresponding to each mode, as described in the IterativeRobot
- * documentation. If you change the name of this class or the package after
- * creating this project, you must also update the manifest file in the resource
- * directory.
+*@author: Tavio Pela
+* Backup code for testing
  */
+ //TODO: Clean up code
 public class Robot extends IterativeRobot {
-    /**
-     * This function is run when the robot is first started up and should be
-     * used for any initialization code.
-     */
+	//Declare variables
+	
+	//Solenoids
 	DoubleSolenoid shooterPunch;
+	//CANTalons used for intake and shooting
 	CANTalon motorIntakeArtic, motorShooterLift, motorShooterLeft, motorShooterRight;
+	//Joysticks
 	Joystick joystickLeft, joystickRight, joystickArtic;
+	//VictorSPs for controlling drive motors
 	VictorSP motorFrontRight, motorBackRight, motorFrontLeft, motorBackLeft, motorIntakeRoller;
+	//Constants
 	double leftSpeed, rightSpeed, intakeRollerPower, intakeArticPower, shooterLiftPower, shooterPower;
 	
     public void robotInit() {
